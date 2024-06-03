@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+    <div class="Top">
+        <div class="sitename">
+            <h1>Online Testing System</h1>
+            <div class="menu">
+                {% block top %}{% endblock top %} <!--This will render the top block of the child template.-->
+                {% block content %}{% endblock content %}  <!--# This will render the content block of the child template.-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
